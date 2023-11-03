@@ -1,0 +1,50 @@
+:root {
+  --clr-primary: #50bb7b;
+  --clr-primary-light: #419564;
+  --clr-primary-dark: #276f47;
+
+  --clr-grey-light-1: #faf9f9;
+  --clr-grey-light-2: #f4f2f2;
+  --clr-grey-light-3: #f0eeee;
+  --clr-grey-light-4: #ccc;
+
+  --clr-grey-dark-1: #999;
+
+  --clr-txt-white: #fff;
+  --clr-txt-black: #111;
+
+  --fw-500: "SofiaPro-Medium";
+  --fw-700: "SofiaPro-Bold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-primary),
+    var(--clr-primary-light)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "SofiaPro-Medium";
+  src: url("../../../assets/fonts/SofiaPro-Medium.otf");
+}
+
+@font-face {
+  font-family: "SofiaPro-Bold";
+  src: url("../../../assets/fonts/SofiaPro-Black.otf");
+}
