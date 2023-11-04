@@ -8,6 +8,10 @@
   font-family: var(--fw-500);
   text-transform: capitalize;
   color: var(--clr-primary);
+
+  @media only screen and (max-width: 40em) {
+    font-size: 3.2rem;
+  }
 }
 
 .slogan {
@@ -20,10 +24,13 @@
   display: flex;
   align-items: center;
 
-  @media only screen and (max-width: 31.25em) {
-    order: 1;
-    flex: 0 0 100%;
-    background-color: var(--clr-grey-light-2);
+  @media only screen and (max-width: 68.75em) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 56.56em) {
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__input {
@@ -38,10 +45,44 @@
     transition: all 0.2s;
     margin-right: -11.5rem;
 
+    @media only screen and (max-width: 75em) {
+      // 1200px
+      width: 65%;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      // 1100px
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 56.56em) {
+      // 905px
+      width: 40rem;
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 31.56em) {
+      // 505px
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       width: 70%;
       background-color: var(--clr-grey-light-3);
+
+      @media only screen and (max-width: 68.75em) {
+        width: 75%;
+      }
+
+      @media only screen and (max-width: 56.56em) {
+        width: 40rem;
+      }
+
+      @media only screen and (max-width: 31.56em) {
+        // 505px
+        width: 100%;
+      }
     }
 
     &::-webkit-input-placeholder {
@@ -61,6 +102,17 @@
     color: var(--clr-txt-white);
     border-radius: 10rem;
     padding: 1.25rem 1.9rem;
+
+    @media only screen and (max-width: 56.56em) {
+      border: 0.1rem solid var(--clr-primary-dark);
+      padding: 1.5rem 2rem;
+      width: 40rem;
+    }
+
+    @media only screen and (max-width: 31.56em) {
+      // 505px
+      width: 100%;
+    }
 
     &:hover {
       background-color: var(--clr-primary-light);
@@ -88,4 +140,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @media only screen and (max-width: 68.75em) {
+    display: none;
+  }
 }

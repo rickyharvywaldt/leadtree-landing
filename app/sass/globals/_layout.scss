@@ -7,10 +7,18 @@
   border-radius: 1rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   position: relative;
-}
 
-.wrapper {
-  display: flex;
+  @media only screen and (max-width: 75em) {
+    margin: 0;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .text-box {
@@ -19,4 +27,16 @@
   gap: 2.8rem;
   width: 50%;
   margin-top: 10rem;
+
+  @media only screen and (max-width: 68.75em) {
+    text-align: center;
+    gap: 1rem;
+    width: 60%;
+    margin-top: 5rem;
+  }
+
+  @media only screen and (max-width: 56.56em) {
+    width: 90%;
+    gap: 2rem;
+  }
 }
